@@ -1,0 +1,19 @@
+{
+  "name": "chat2",
+  "version": "1.0.0",
+  "description": "Chatroom",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "author": "Yan",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "npm": "^6.14.4",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
