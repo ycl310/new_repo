@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat App</title>
+  <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script defer src="script.js"></script>
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #000000;
+    }
+
+    #title {
+     color:white;
+     position: absolute;
+     left:10px;
+     font-family: sans-serif;
+      }
+
+    #message-display {
+      width: 80%;
+      max-width: 1200px;
+    }
+
+    #message-display div {
+      background-color: #00000;
+      padding: 5px;
+    }
+
+    #message-display div:nth-child(1n) {
+      color: white;
+      font-size: 27px;
+    }
+
+    #send-form {
+      position: fixed;
+      padding-bottom: 30px;
+      bottom: 0;
+      background-color: white;
+      max-width: 1200px;
+      width: 80%;
+      display: flex;
+   }
+
+    #message-input {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title">YanChat</h1>
+  <div id="message-display"></div>
+  <form id="send-form" style="background-color:#000000;">
+    <input type="text" id="message-input">
+    <button type="submit" id="send-button">Send</button>
+  </form>
+</body>
+</html>
